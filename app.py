@@ -160,10 +160,12 @@ def build_recommendation(location_id, count, avg_service_seconds, walk_minutes, 
         "source": source,
     }
 
-
 @app.route("/")
 def index():
-    return render_template("index.html")
+    return render_template(
+        "index.html",
+        google_maps_browser_key=os.getenv("GOOGLE_MAPS_BROWSER_KEY", "")
+    )
 
 
 @app.route("/admin")

@@ -284,3 +284,34 @@ footer {
     justify-content: space-between;
   }
 }
+/* Live campus map */
+
+.map-card {
+  margin-bottom: 18px;
+  padding: 20px;
+  border: 1px solid #1e2d43;
+  border-radius: 22px;
+  background: rgba(13, 25, 43, 0.88);
+  overflow: hidden;
+}
+
+.map-topline {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.map-topline h2 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+#campus-map {
+  width: 100%;
+  height: 360px;
+  border-radius: 16px;
+  overflow: hidden;
+  background: #0a1424;
+}
