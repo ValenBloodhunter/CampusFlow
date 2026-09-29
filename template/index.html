@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b1220">
+  <title>CampusFlow — Know when to go</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <main class="shell">
+    <header class="hero">
+      <div>
+        <p class="eyebrow">CAMPUSFLOW</p>
+        <h1>Know when to go.</h1>
+        <p class="subhead">Live campus queues translated into a simple action: leave now, or wait before you walk.</p>
+      </div>
+
+      <div class="status-panel" aria-live="polite">
+        <span class="live-dot"></span>
+        <span id="live-status">Connecting to live queues…</span>
+        <span class="status-divider">•</span>
+        <span id="location-status">Finding your location…</span>
+      </div>
+    </header>
+
+    <section class="queue-grid" aria-label="Campus queue recommendations">
+      <article class="queue-card" data-location-id="library">
+        <div class="card-topline">
+          <div>
+            <p class="card-kicker">CAMPUS SERVICE</p>
+            <h2>Central Library</h2>
+          </div>
+          <span class="pill">LIVE</span>
+        </div>
+
+        <div class="metric-row">
+          <div class="metric">
+            <strong id="library-count">—</strong>
+            <span>people waiting</span>
+          </div>
+
+          <div class="metric">
+            <strong id="library-queue">—</strong>
+            <span>queue</span>
+          </div>
+
+          <div class="metric">
+            <strong id="library-walk">—</strong>
+            <span>walk</span>
+          </div>
+        </div>
+
+        <div class="recommendation">
+          <p id="library-headline" class="headline">CALCULATING…</p>
+          <p class="recommendation-copy">Reduce unnecessary time standing at the destination.</p>
+          <p id="library-source" class="source-label"></p>
+        </div>
+      </article>
+
+      <article class="queue-card" data-location-id="cafeteria">
+        <div class="card-topline">
+          <div>
+            <p class="card-kicker">CAMPUS SERVICE</p>
+            <h2>Cafeteria</h2>
+          </div>
+          <span class="pill">LIVE</span>
+        </div>
+
+        <div class="metric-row">
+          <div class="metric">
+            <strong id="cafeteria-count">—</strong>
+            <span>people waiting</span>
+          </div>
+
+          <div class="metric">
+            <strong id="cafeteria-queue">—</strong>
+            <span>queue</span>
+          </div>
+
+          <div class="metric">
+            <strong id="cafeteria-walk">—</strong>
+            <span>walk</span>
+          </div>
+        </div>
+
+        <div class="recommendation">
+          <p id="cafeteria-headline" class="headline">CALCULATING…</p>
+          <p class="recommendation-copy">Use the live queue before committing to the walk.</p>
+          <p id="cafeteria-source" class="source-label"></p>
+        </div>
+      </article>
+
+      <article class="queue-card" data-location-id="admin">
+        <div class="card-topline">
+          <div>
+            <p class="card-kicker">CAMPUS SERVICE</p>
+            <h2>Admin Office</h2>
+          </div>
+          <span class="pill">LIVE</span>
+        </div>
+
+        <div class="metric-row">
+          <div class="metric">
+            <strong id="admin-count">—</strong>
+            <span>people waiting</span>
+          </div>
+
+          <div class="metric">
+            <strong id="admin-queue">—</strong>
+            <span>queue</span>
+          </div>
+
+          <div class="metric">
+            <strong id="admin-walk">—</strong>
+            <span>walk</span>
+          </div>
+        </div>
+
+        <div class="recommendation">
+          <p id="admin-headline" class="headline">CALCULATING…</p>
+          <p class="recommendation-copy">Time your departure instead of discovering the line after arrival.</p>
+          <p id="admin-source" class="source-label"></p>
+        </div>
+      </article>
+    </section>
+
+    <footer>
+      <span>Prototype queue timing assistant.</span>
+      <a href="/admin">Open demo queue controls</a>
+    </footer>
+  </main>
+
+  <script type="module" src="/app.js"></script>
+</body>
+</html>
