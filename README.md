@@ -21,7 +21,7 @@ The prototype covers:
 - Cafeteria
 - Admin Office
 
-A demo admin page changes queue counts live. The student page updates without refresh and asks the backend for a new recommendation.
+A demo admin page changes queue counts live , the student page updates without refresh and asks the backend for a new recommendation.
 
 ## Tech Stack
 
