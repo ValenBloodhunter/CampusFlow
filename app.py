@@ -21,20 +21,20 @@ ROUTES_URL = "https://routes.googleapis.com/directions/v2:computeRoutes"
 LOCATIONS = {
     "library": {
         "name": "Central Library",
-        "lat": 0.0,
-        "lng": 0.0,
+        "lat": 16.46182954128046,
+        "lng": 80.50574007336999,
         "fallbackWalkMinutes": 5,
     },
     "cafeteria": {
         "name": "Cafeteria",
-        "lat": 0.0,
-        "lng": 0.0,
+        "lat": 16.465005386580685,
+        "lng": 80.50748244678864,
         "fallbackWalkMinutes": 4,
     },
     "admin": {
         "name": "Admin Office",
-        "lat": 0.0,
-        "lng": 0.0,
+        "lat": 16.46471098168453,
+        "lng": 80.5077337311542,
         "fallbackWalkMinutes": 7,
     },
 }
