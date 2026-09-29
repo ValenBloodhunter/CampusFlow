@@ -3,9 +3,54 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>CampusFlow Admin</title>
+  <title>CampusFlow — Queue Control</title>
+  <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-  <h1>Admin page pending Person 2</h1>
+  <main class="admin-shell">
+    <p class="eyebrow">CAMPUSFLOW</p>
+    <h1 style="font-size:clamp(2rem,8vw,4rem)">Queue Control</h1>
+    <p class="subhead">Hackathon demo simulator. Change a live queue and watch the student dashboard update without refresh.</p>
+
+    <section class="admin-list" aria-label="Queue controls">
+      <article class="admin-card">
+        <div>
+          <h2>Central Library</h2>
+          <p>Current: <strong id="admin-library-count">—</strong></p>
+        </div>
+        <div class="admin-controls">
+          <button type="button" data-location="library" data-delta="-1" aria-label="Remove one from library queue">−1</button>
+          <button type="button" data-location="library" data-delta="1" aria-label="Add one to library queue">+1</button>
+        </div>
+      </article>
+
+      <article class="admin-card">
+        <div>
+          <h2>Cafeteria</h2>
+          <p>Current: <strong id="admin-cafeteria-count">—</strong></p>
+        </div>
+        <div class="admin-controls">
+          <button type="button" data-location="cafeteria" data-delta="-1" aria-label="Remove one from cafeteria queue">−1</button>
+          <button type="button" data-location="cafeteria" data-delta="1" aria-label="Add one to cafeteria queue">+1</button>
+        </div>
+      </article>
+
+      <article class="admin-card">
+        <div>
+          <h2>Admin Office</h2>
+          <p>Current: <strong id="admin-admin-count">—</strong></p>
+        </div>
+        <div class="admin-controls">
+          <button type="button" data-location="admin" data-delta="-1" aria-label="Remove one from admin queue">−1</button>
+          <button type="button" data-location="admin" data-delta="1" aria-label="Add one to admin queue">+1</button>
+        </div>
+      </article>
+    </section>
+
+    <p id="admin-status" class="admin-status" aria-live="polite">Connecting to Firebase…</p>
+    <p><a href="/">← Student dashboard</a></p>
+  </main>
+
+  <script type="module" src="/admin.js"></script>
 </body>
 </html>
