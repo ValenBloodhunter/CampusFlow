@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { initializeApp } from "https://www.gstatic.com/firebasejs/12.19.0/firebase-app.js";
 import {
   getDatabase,
@@ -53,4 +54,14 @@ export async function changeQueue(locationId, delta) {
     const currentCount = Number(currentValue ?? 0);
     return Math.max(0, currentCount + delta);
   });
+=======
+// Placeholder. Person 2 owns this file.
+export function subscribeToQueues() {
+  console.warn("Firebase integration pending Person 2");
+  return () => {};
+}
+
+export async function changeQueue() {
+  throw new Error("Firebase integration pending Person 2");
+>>>>>>> d319158ec34e6b1acd51274bb41069b99104a0bf
 }
